@@ -20,7 +20,7 @@ export default {
   },
   methods: {
     add() {
-      if (this.name != "") {
+      if (this.name.trim() != '') {
         this.$emit("taskAdded", { name: this.name });
         this.name = "";
       }
